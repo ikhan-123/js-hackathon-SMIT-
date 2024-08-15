@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-white h-screen w-screen">
+    <div class="navbar bg-[#4d68ff]">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-white text-xl">Personal Blogging App</a>
+        </div>
+        <div class="nav-btn flex justify-center items-center mr-auto">
+            <a href="" class="ml-auto">Signup</a>
+
+        </div>
+    </div>
+
+    <div class="container mx-auto p-4 pt-6 mt-10">
+        <div class="max-w-md mx-auto bg-[#fff7f5] rounded-lg shadow-md p-8">
+            <h2 class="text-3xl text-gray-900 font-bold mb-4">Register</h2>
+            <form id="form">
+                <div class="mb-4">
+                    <label class="block text-black text-sm font-bold mb-2" for="firstname">First Name</label>
+                    <input class=" bg-white rounded w-full py-2 px-3 text-gray-700  " id="firstname" type="text"
+                        placeholder="first name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-black text-sm font-bold mb-2" for="lastname">Last Name</label>
+                    <input
+                        class="bg-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="lastname" type="text" placeholder="last name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-black text-sm font-bold mb-2" for="email">Email</label>
+                    <input
+                        class="bg-white  border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="email" type="email" placeholder="Email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-black text-sm font-bold mb-2" for="password">Password</label>
+                    <input
+                        class="bg-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="password" type="password" placeholder="Password">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-black text-sm font-bold mb-2" for="password">Repeat Password</label>
+                    <input
+                        class="bg-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="password" type="password" placeholder="Repeat Password">
+                </div>
+                <div class="flex justify-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                        type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="./Scripts/register.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
