@@ -13,14 +13,3 @@ import {
     }
   });
   
-  const btn = document.querySelector(".nav-btn");
-  
-  btn.addEventListener("click", () => {
-    signOut(auth)
-      .then(() => {
-        window.location = "login.html";
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  });

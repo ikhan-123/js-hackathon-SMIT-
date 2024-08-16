@@ -12,16 +12,16 @@ const password = document.querySelector("#password");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     console.log(email.value);
-    signInWithEmailAndPassword(auth, email.value, password.value)
+    signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
         .then((userCredential) => {
             const user = userCredential.user;
             console.log(user);
-            location.href = "index.html"
+            window.location = "dashboard.html";
 
 
         })
         .catch((error) => {
-            const errorMessage = error.message;
+            console.error("Error signing in:", error.message);
         });
 
-})
+});
